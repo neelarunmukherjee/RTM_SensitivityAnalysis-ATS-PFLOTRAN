@@ -1,4 +1,4 @@
-# arctic-sa
+# RTM Sensitivity Analysis for ATS-PFLOTRAN models
 
 Reproducible global sensitivity analysis and calibration support for the **Arctic soil-column ATS + PFLOTRAN (Alquimia) model** (config 8, Imnavait):
 
