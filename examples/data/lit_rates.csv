@@ -1,0 +1,29 @@
+,,,,,,,
+Paper,Site,Rate type,Rate units,Avg Rate,SE rate,Incubation Temp (deg C),Notes
+Judd & Kling 2002,Soil water from tussock tundra and wet sedge,CO2 from respiration,ng C g-1 soil h-1,19.6,3,8-15,
+Judd & Kling 2002,Soil water from tussock tundra and wet sedge,Net CH4 (net of production and consumption),pg C g-1 soil h-1,37.2,51.8,8-15,
+,,,,,,,
+Zak and Kling 2006 (Ecology 87:1659-),Tussock tundra soil,CO2 from respiration,ng C / g soil / hr,739,54.9,2.8,5 day incubation; jars purged with N2
+,,CH4 production,pg C / g soil / hr,56,4.56,2.8,5 day incubation; jars purged with N2
+,Birch-willow soil,CO2 from respiration,ng C / g soil / hr,778,68.4,2.8,5 day incubation; jars purged with N2
+,,CH4 production,pg C / g soil / hr,61,6.3,2.8,5 day incubation; jars purged with N2
+,Wet sedge soil,CO2 from respiration,ng C / g soil / hr,307,28.1,2.8,5 day incubation; jars purged with N2
+,,CH4 production,pg C / g soil / hr,434,153.3,2.8,5 day incubation; jars purged with N2
+Trusiak et al. 2019,Imnavait tussock tundra,Net dissolved Fe(II) production,ug Fe g-1 soil d-1,3.9,2.1,9 +/- 0.2,Could assume this is all microbial iron reduction
+Trusiak et al. 2019,Imnavait wet sedge,Net dissolved Fe(II) production,ug Fe g-1 soil d-1,1.9,0.4,9 +/- 0.2,
+Trusiak et al. 2019,Imnavait tussock tundra,O2 consumption,ug O2 g-1 soil d-1,3,1.1,9 +/- 0.2,Could assume this is O2 consumption by aerobic respiration; assume respiratory quotient of 1 mol O2 consumed per mol CO2 produced
+Trusiak et al. 2019,Imnavait wet sedge,O2 consumption,ug O2 g-1 soil d-1,4.2,0.3,9 +/- 0.2,
+,,,,,,,
+Paper,Site,Rate type,Rate units,Avg Rate,SD Rate,Incubation Temp (deg C),Notes
+Romanowicz et al. 2021,Tussock tundra 0 hrs,CO2 from respiration,ng C g-1 soil d-1,1345,362,5,0 hr jars were purged with N2 (simulate anoxic conditions)
+,Tussock tundra 4 hrs,CO2 from respiration,ng C g-1 soil d-1,1355,368,5,Jars were purged with compressed air (assume some O2 available)
+,Tussock tundra 24 hrs,CO2 from respiration,ng C g-1 soil d-1,1433,507,5,Jars were purged with compressed air (assume some O2 available)
+,Wet sedge 0 hours,CO2 from respiration,ng C g-1 soil d-1,308,18,5,0 hr jars were purged with N2 (simulate anoxic conditions)
+,Wet sedge 4 hours,CO2 from respiration,ng C g-1 soil d-1,291,50,5,Jars were purged with compressed air (assume some O2 available)
+,Wet sedge 24 hours,CO2 from respiration,ng C g-1 soil d-1,358,66,5,Jars were purged with compressed air (assume some O2 available)
+,Tussock tundra 0 hrs,CH4 production or consumption,pg C g-1 soil d-1,429,100,5,0 hr jars were purged with N2 (simulate anoxic conditions)
+,Tussock tundra 4 hrs,CH4 production or consumption,pg C g-1 soil d-1,-33,49,5,Jars were purged with compressed air (assume some O2 available); Negative implies net consumption
+,Tussock tundra 24 hrs,CH4 production or consumption,pg C g-1 soil d-1,-43,39,5,Jars were purged with compressed air (assume some O2 available); Negative implies net consumption
+,Wet sedge 0 hours,CH4 production or consumption,pg C g-1 soil d-1,211,28,5,0 hr jars were purged with N2 (simulate anoxic conditions)
+,Wet sedge 4 hours,CH4 production or consumption,pg C g-1 soil d-1,-83,44,5,Jars were purged with compressed air (assume some O2 available); Negative implies net consumption
+,Wet sedge 24 hours,CH4 production or consumption,pg C g-1 soil d-1,-108,47,5,Jars were purged with compressed air (assume some O2 available); Negative implies net consumption

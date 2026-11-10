@@ -1,0 +1,30 @@
+# All paths are relative to THIS file unless absolute.  Defaults reproduce the published config-8 study.
+study_dir: ${ARCTIC_SA_STUDY}        # export ARCTIC_SA_STUDY=/path/to/config8_sensitivity_analysis; folder that holds data/, inputs/ and run/ of the equilibrated baseline
+templates:
+  reaction_in: data/pflotran_dir/21_subsurface_Rxn_*.in      # PFLOTRAN reaction input (glob, must match one file)
+  database: data/pflotran_dir/db/hanford_nm_DOMacid_tune_AcOHacidbase.dat
+  xml: inputs/21_new*Rxn*temp.xml                            # ATS input (glob, must match one file)
+  data_dir: data                                             # copied into every member
+restart: run/run_3_equilibrate/yr09_end.h5                   # equilibrated baseline checkpoint every member restarts from
+ats:
+  executable: ats                                            # must be on PATH, or give an absolute path
+  args: ["--verbosity=low"]
+run:
+  workers: 8
+  years: 2                                                   # simulated years per member (verification uses 6)
+  keep_members: false                                        # keep the full member folders (large)
+output_dir: sa                                               # designs/, results/, logs, manifests
+design:
+  morris: {r: 10, levels: 4, candidates: 300, seed: 1}       # 10 x (23 + 1) = 240 members
+  lhs:    {n: 200, seed: 2}                                  # on the 17 parameters in `lhs_parameters` (see parameters.py)
+analysis:
+  tolerance: 1.33                                            # concentration tolerance, 0.75-1.33 x
+  sigma_ph: 0.15
+  rate_factor: 2.0
+  top_cells: 35                                              # top 35 cm compared with the field
+  morris_keep_threshold: 0.1
+  sobol_n: 4096
+  seed: 0
+data:
+  field_chem: data/field_chem.csv
+  lit_rates: data/lit_rates.csv

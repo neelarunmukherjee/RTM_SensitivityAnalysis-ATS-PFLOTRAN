@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arctic-sa"
+version = "0.1.0"
+description = "Reproducible Morris / Latin-hypercube / emulator / Sobol / history-matching sensitivity analysis for the Arctic soil-column ATS+PFLOTRAN (Alquimia) model"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas", "scipy>=1.7", "scikit-learn", "h5py", "matplotlib", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+arctic-sa = "arctic_sa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

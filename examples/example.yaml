@@ -1,0 +1,7 @@
+# Analysis-only config: reproduces the published Morris / emulator / Sobol / history-matching results from the cached outputs shipped in examples/data.
+# (Running ATS needs the full study folder; see ../configs/arctic_c8.yaml.)
+study_dir: .
+templates: {reaction_in: none_*.in, database: none.dat, xml: none_*.xml, data_dir: data}
+restart: none.h5
+output_dir: data
+data: {field_chem: data/field_chem.csv, lit_rates: data/lit_rates.csv}
